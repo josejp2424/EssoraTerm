@@ -1,0 +1,31 @@
+<svg width="256" height="256" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#92c23f"/>
+      <stop offset="55%" stop-color="#6fa02c"/>
+      <stop offset="100%" stop-color="#4b7a1f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Lineas "antena" tipo grafo, detras del hexagono -->
+  <line x1="40" y1="22.43" x2="20" y2="6" stroke="#a9d15e" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="20" cy="6" r="5" fill="#a9d15e"/>
+
+  <line x1="88" y1="105.57" x2="112" y2="122" stroke="#a9d15e" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="112" cy="122" r="5" fill="#a9d15e"/>
+
+  <!-- Hexagono principal (flat-top), mismo estilo que el logo Essora -->
+  <polygon points="112,64 88,22.43 40,22.43 16,64 40,105.57 88,105.57" fill="url(#hexGrad)"/>
+
+  <!-- Nodos en los vertices, estilo grafo -->
+  <circle cx="112" cy="64" r="5.5" fill="#a9d15e"/>
+  <circle cx="88" cy="22.43" r="5.5" fill="#a9d15e"/>
+  <circle cx="40" cy="22.43" r="5.5" fill="#a9d15e"/>
+  <circle cx="16" cy="64" r="5.5" fill="#a9d15e"/>
+  <circle cx="40" cy="105.57" r="5.5" fill="#a9d15e"/>
+  <circle cx="88" cy="105.57" r="5.5" fill="#a9d15e"/>
+
+  <!-- Simbolo de terminal ">_" en blanco, mismo peso visual que la "E" del logo -->
+  <path d="M50 46 L74 64 L50 82" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="66" y="78" width="24" height="10" rx="3" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,24 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=EssoraTerm Preferences
+Name[es]=Preferencias de EssoraTerm
+Name[ca]=Preferències d'EssoraTerm
+Name[de]=EssoraTerm-Einstellungen
+Name[fr]=Préférences d’EssoraTerm
+Name[it]=Preferenze di EssoraTerm
+Name[pt]=Preferências do EssoraTerm
+Name[hu]=EssoraTerm beállítások
+Name[ru]=Настройки EssoraTerm
+Name[ja]=EssoraTerm の設定
+Name[zh]=EssoraTerm 设置
+Name[ar]=تفضيلات EssoraTerm
+Comment=Configure colors, font, size and terminal behavior
+Comment[es]=Configura colores, fuente, tamaño y comportamiento de la terminal
+Exec=essoraterm-settings
+TryExec=essoraterm-settings
+Icon=essoraterm
+Terminal=false
+Categories=Settings;System;
+Keywords=terminal;font;color;settings;preferences;
+StartupNotify=true

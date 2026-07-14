@@ -1,0 +1,32 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=EssoraTerm
+GenericName=Terminal Emulator
+GenericName[es]=Emulador de terminal
+Comment=Lightweight terminal emulator for Essora and Puppy Linux
+Comment[es]=Emulador de terminal ligero para Essora y Puppy Linux
+Exec=essoraterm
+TryExec=essoraterm
+Icon=essoraterm
+Terminal=false
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;terminal;
+StartupNotify=true
+Actions=Preferences;
+
+[Desktop Action Preferences]
+Name=Preferences
+Name[es]=Preferencias
+Name[ca]=Preferències
+Name[de]=Einstellungen
+Name[fr]=Préférences
+Name[it]=Preferenze
+Name[pt]=Preferências
+Name[hu]=Beállítások
+Name[ru]=Настройки
+Name[ja]=設定
+Name[zh]=设置
+Name[ar]=التفضيلات
+Exec=essoraterm-settings
+Icon=essoraterm

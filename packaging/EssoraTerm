@@ -1,0 +1,80 @@
+! EssoraTerm application defaults
+! Native persistent right-click menu, modern Xft font and Essora palette.
+!
+! Normal right-click opens the native edit menu and leaves it visible.
+! Shift+right-click keeps the original xterm selection extension.
+! Ctrl+right-click keeps the original xterm font menu.
+
+*title: EssoraTerm
+*iconName: EssoraTerm
+*saveLines: 4096
+*utf8: 2
+*locale: true
+*selectToClipboard: false
+
+! Initial appearance
+*background: #002b36
+*foreground: #839496
+*cursorColor: #00ffff
+*highlightColor: #1F7A52
+*highlightTextColor: #ffffff
+
+! Use Xft/Fontconfig. The font pattern keeps these settings local to
+! EssoraTerm instead of forcing them on every X11 application.
+*renderFont: true
+*faceName: Monospace:style=Regular:antialias=true:autohint=true
+*faceSize: 10.0
+*allowBoldFonts: true
+*cursorBlink: false
+*visualBell: false
+*scrollKey: true
+*scrollTtyOutput: false
+
+! Initial terminal size. Position is intentionally left to the window
+! manager so JWM/EssoraWM can center the window correctly.
+*VT100.geometry: 95x25
+*VT100.scrollBar: true
+*rightScrollBar: true
+*VT100*scrollbar.width: 14
+
+! Easier scrollbar interaction.  Left-clicking jumps the thumb to the
+! pointer position and holding/dragging moves through the scrollback.
+! The middle and right button behavior from Xaw remains available.
+*scrollbar.minimumThumb: 24
+*scrollbar.background: #002b36
+*scrollbar.foreground: #1F7A52
+*scrollbar.borderWidth: 0
+*scrollbar.translations: #override \
+    <Btn1Down>: StartScroll(Continuous) MoveThumb() NotifyThumb() \n\
+    <Btn1Motion>: MoveThumb() NotifyThumb() \n\
+    <Btn1Up>: NotifyScroll(Proportional) EndScroll()
+
+! Persistent contextual menu.
+! Ignore the unmodified button-down event, then open the menu on release.
+! This avoids Xaw's traditional spring-loaded "hold the button" behavior.
+*VT100.translations: #override \
+    ~Shift ~Ctrl <Btn3Down>: ignore() \n\
+    ~Shift ~Ctrl <Btn3Up>: essoraterm-popup-edit-menu() \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD,PRIMARY)
+
+! Xaw normally updates the highlighted entry only while a button is held.
+! Add ordinary pointer motion so hover works after the right button is released.
+*editMenu.translations: #override \
+    <Enter>: highlight() \n\
+    <Leave>: unhighlight() \n\
+    <Motion>: highlight() \n\
+    <Btn1Down>: highlight() \n\
+    <Btn1Up>: popdown() notify() unhighlight() \n\
+    <Btn2Up>: popdown() unhighlight() \n\
+    <Btn3Up>: popdown() unhighlight()
+
+! Stock Xaw highlights by swapping the entry foreground with the menu
+! background. Green text therefore becomes a green selection bar with light
+! text when the pointer passes over an item.
+*editMenu.background: #f4f4f4
+*editMenu.borderColor: #1F7A52
+*editMenu.borderWidth: 1
+*editMenu*foreground: #1F7A52
+*editMenu*Sme.height: 22
+*editMenu*SmeBSB.vertSpace: 40
