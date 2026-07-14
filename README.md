@@ -1,7 +1,7 @@
 # EssoraTerm
 
 <p align="center">
-  <img src="screenshot/essoraterm_github.png" width="128" alt="EssoraTerm icon">
+  <img src="screenshot/essoraterm_github.png" width="512" alt="EssoraTerm icon">
 </p>
 
 <p align="center">
