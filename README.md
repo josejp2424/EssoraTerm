@@ -68,7 +68,7 @@ The default context menu contains:
 <p align="center">
   <img src="screenshot/essoraterm-menu.png"
        alt="EssoraTerm context menu"
-       width="520">
+       width="760">
 </p>
 
 ```text
