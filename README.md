@@ -65,6 +65,12 @@ EssoraTerm does not use Python.
 
 The default context menu contains:
 
+<p align="center">
+  <img src="screenshot/essoraterm-menu.png"
+       alt="EssoraTerm context menu"
+       width="520">
+</p>
+
 ```text
 Copy
 Paste
