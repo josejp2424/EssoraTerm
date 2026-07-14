@@ -39,7 +39,7 @@ EssoraTerm does not use Python.
 <p align="center">
   <img src="screenshot/essoraterm_github.png"
        alt="EssoraTerm terminal emulator"
-       width="850">
+       width="760">
 </p>
 
 ## Main Features
