@@ -1,7 +1,7 @@
 # EssoraTerm
 
 <p align="center">
-  <img src="screenshot/essoraterm_github.png" width="512" alt="EssoraTerm icon">
+  <img src="assets/icons/hicolor/scalable/apps/essoraterm.svg" alt="EssoraTerm icon">
 </p>
 
 <p align="center">
@@ -31,6 +31,16 @@ This release is based on **xterm patch #410** and adds:
 - compatibility links for applications that expect `xterm`.
 
 EssoraTerm does not use Python.
+
+## Screenshots
+
+### EssoraTerm
+
+<p align="center">
+  <img src="screenshot/essoraterm_github.png"
+       alt="EssoraTerm terminal emulator"
+       width="850">
+</p>
 
 ## Main Features
 
@@ -68,6 +78,12 @@ The labels are automatically translated according to the system locale.
 ## Graphical Preferences
 
 The `essoraterm-settings` application is written in native C with GTK3.
+
+<p align="center">
+  <img src="screenshot/essoraterm-preference.png"
+       alt="EssoraTerm graphical preferences"
+       width="760">
+</p>
 
 It allows each user to configure:
 
@@ -201,6 +217,7 @@ debian/                     Debian package metadata and maintainer scripts
 scripts/                    Build, dependency, and validation scripts
 src/                        EssoraTerm-specific C source code
 source/                     Optional local xterm source archive
+screenshot/                 Project screenshots
 build-deb.sh                Main build and packaging script
 COPYING                     Original xterm license notices
 LICENSE-ESSORATERM          License for EssoraTerm-specific code
